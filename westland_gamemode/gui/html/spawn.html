@@ -15,16 +15,14 @@
         <h1 class="display-3 text-center">Select your spawn</h1>
     </div>
     <div class="container">
-        <div class="jumbotron">
-            <FORM>
-                <SELECT name="SpawnZone" size="1">
-                    <OPTION>Big city
-                    <OPTION>Village
-                    <OPTION>Desert city
-                </SELECT>
-            </FORM>   
-            <button type="button" class="SpawnButton btn btn-primary">Spawn</button> 
-          </div>
+        <select id="spawnZone" class="custom-select" multiple>
+            <option selected value="BigCity">Big city</option>
+            <option value="DesertCity">Desert city</option>
+            <option value="Village">Village</option>
+            <option value="WesternTown">Western town</option>
+            <option value="OldTown">Old town</option>
+        </select>
+        <button type="button" class="SpawnButton btn btn-primary">Spawn</button> 
     </div>
     <script src="http://asset/westland_gamemode/gui/js/spawn.js"></script>
 </body>
