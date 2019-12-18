@@ -4,11 +4,13 @@
 	"server_scripts": [
 		"_spawnPreset/server/spawnPosition.lua",
 		"_spawnPreset/server/spawnClothes.lua",
-		"westland_s.lua"
+		"westland_s.lua",
+		"npc_s.lua"
 	],
 	"client_scripts": [
 		"_spawnPreset/client/spawnClothes.lua",
-		"westland_c.lua"
+		"westland_c.lua",
+		"player_c.lua"
 	],
 	"files": [
 		"gui/html/team.html",

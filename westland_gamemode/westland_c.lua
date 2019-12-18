@@ -22,6 +22,7 @@ end
 AddEvent("SetWestlandTeam", SetWestlandTeam)
 
 function DestroyWestlandUI()
-    DestroyWebUI(teamUI)    
+    ShowMouseCursor(false)
+    DestroyWebUI(teamUI)
 end
 AddEvent("DestroyWestlandUI", DestroyWestlandUI)
