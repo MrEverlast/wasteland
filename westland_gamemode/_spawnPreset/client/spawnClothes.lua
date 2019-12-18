@@ -2,7 +2,8 @@ function OnGetClothes()
     local team = GetPlayerPropertyValue(GetPlayerId(), "westlandTeam")
 	AddPlayerChat("You choose: "..tostring(team))
     CallEvent("OnChangeclothes", team)
-    CallRemoteEvent("OnGetWeapon", GetPlayerId())
+    CallRemoteEvent("OnSpawnWeapon", GetPlayerId())
+    CallRemoteEvent("OnSelectedTeamSpawn", GetPlayerId())
 end
 AddEvent("OnGetClothes", OnGetClothes)
 

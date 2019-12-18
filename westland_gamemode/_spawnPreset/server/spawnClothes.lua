@@ -1,4 +1,4 @@
-function OnGetWeapon(player)
-	SetPlayerWeapon(player, 3, 30, true, 1, true)
+function OnSpawnWeapon(player)
+	SetPlayerWeapon(player, 3, 40, true, 1, true)
 end
-AddRemoteEvent("OnGetWeapon", OnGetWeapon)
+AddRemoteEvent("OnSpawnWeapon", OnSpawnWeapon)

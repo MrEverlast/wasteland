@@ -22,6 +22,7 @@ end
 AddEvent("SetWestlandTeam", SetWestlandTeam)
 
 function DestroyWestlandUI()
+    SetInputMode(INPUT_GAME)
     ShowMouseCursor(false)
     DestroyWebUI(teamUI)
 end
