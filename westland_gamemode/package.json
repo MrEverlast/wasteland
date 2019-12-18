@@ -8,7 +8,7 @@
 		"westland_c.lua"
 	],
 	"files": [
-		"gui/team/team.html",
+		"gui/html/team.html",
 		"gui/font/Destroyed_Aero.ttf",
 		"gui/css/bootstrap.min.css",
 		"gui/css/team.css",
