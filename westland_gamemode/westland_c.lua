@@ -17,9 +17,7 @@ AddEvent("OnResolutionChange", OnResolutionChange)
 
 function SetWestlandTeam(team)
     CallRemoteEvent("SetPlayerWestlandTeam", tostring(team))
-    SetWebVisibility(teamUI, WEB_HIDDEN)
-    ShowMouseCursor(false)
-    SetInputMode(INPUT_GAME)
-    DestroyWebUI(teamUI)
+    LoadWebFile(teamUI, "http://asset/westland_gamemode/gui/html/spawn.html")
+    
 end
 AddEvent("SetWestlandTeam", SetWestlandTeam)

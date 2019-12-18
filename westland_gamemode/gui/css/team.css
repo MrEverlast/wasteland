@@ -6,7 +6,7 @@
     -webkit-user-select: none;
 }
 html, body {
-    background: rgba(0, 0, 0, 0.24) !important;
+    background: rgb(39, 39, 39) !important;
     height: 100% !important;
     width: 100% !important;
     overflow: hidden;

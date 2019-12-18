@@ -12,6 +12,7 @@
 	],
 	"files": [
 		"gui/html/team.html",
+		"gui/html/spawn.html",
 		"gui/font/Destroyed_Aero.ttf",
 		"gui/css/bootstrap.min.css",
 		"gui/css/team.css",
@@ -19,6 +20,7 @@
 		"gui/js/bootstrap.bundle.min.js",
 		"gui/js/callEvent.js",
 		"gui/js/team.js",
+		"gui/js/spawn.js",
 		"gui/img/Blue.jpg",
 		"gui/img/Red.jpg",
 		"gui/img/Green.jpg"
