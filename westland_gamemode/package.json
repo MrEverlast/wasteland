@@ -2,9 +2,12 @@
 	"author": "Everlast",
 	"version": "1.0",
 	"server_scripts": [
+		"_spawnPreset/server/spawnPosition.lua",
+		"_spawnPreset/server/spawnClothes.lua",
 		"westland_s.lua"
 	],
 	"client_scripts": [
+		"_spawnPreset/client/spawnClothes.lua",
 		"westland_c.lua"
 	],
 	"files": [
