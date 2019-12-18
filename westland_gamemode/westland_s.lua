@@ -20,7 +20,7 @@ AddEvent("OnPackageStart", function()
 		print("MariaDB: Connection failed to " .. SQL_HOST .. ", see mariadb_log file")
 
 		-- Immediately stop the server if we cannot connect
-		ServerExit()
+--		ServerExit()
 	end
 end)
 
