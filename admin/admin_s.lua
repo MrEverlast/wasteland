@@ -1,3 +1,7 @@
+AddEvent("OnPackageStart", function()
+    spec = false
+end)
+
 function cmd_vehicle(player, model)
 	model = tonumber(model)
 	local x, y, z = GetPlayerLocation(player)
@@ -34,3 +38,9 @@ function cmd_test(player)
 	AddPlayerChat(player, "Team selected : " .. GetPlayerPropertyValue(player, "westlandTeam"))
 end
 AddCommand("t", cmd_test)
+
+function cmd_spec(player)
+	spec = not spec
+	SetPlayerSpectate(player, spec)
+end
+AddCommand("spec", cmd_spec)
