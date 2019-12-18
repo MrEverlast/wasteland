@@ -1,3 +1,4 @@
 AddEvent("OnPackageStart", function()
-    CreateNPC(-104337.0, 196708.0, 1312.0, 0)
+    npc = CreateNPC(-104337.0, 196708.0, 1312.0, 0)
+    SetNPCPropertyValue(npc, "westlandTeam", "teamBlue")
 end)
