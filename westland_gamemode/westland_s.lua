@@ -64,12 +64,13 @@ AddCommand("team", cmd_team)
 function SetPlayerWestlandTeam(player, team)
     SetPlayerPropertyValue(player, "westlandTeam", team)
 end
-AddEvent("SetPlayerWestlandTeam", SetPlayerWestlandTeam)
 AddRemoteEvent("SetPlayerWestlandTeam", SetPlayerWestlandTeam)
 
 function GetPlayerWestlandTeam(player)
     return GetPlayerPropertyValue(player, "westlandTeam")
 end
+AddRemoteEvent("GetPlayerWestlandTeam", GetPlayerWestlandTeam)
+
 -- End Set/Get Westland team --
 
 -- Debug --

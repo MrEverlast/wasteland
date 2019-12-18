@@ -14,10 +14,14 @@ function OnResolutionChange(width, height)
 end
 AddEvent("OnResolutionChange", OnResolutionChange)
 
-
 function SetWestlandTeam(team)
     CallRemoteEvent("SetPlayerWestlandTeam", tostring(team))
     LoadWebFile(teamUI, "http://asset/westland_gamemode/gui/html/spawn.html")
     
 end
 AddEvent("SetWestlandTeam", SetWestlandTeam)
+
+function DestroyWestlandUI()
+    DestroyWebUI(teamUI)    
+end
+AddEvent("DestroyWestlandUI", DestroyWestlandUI)
