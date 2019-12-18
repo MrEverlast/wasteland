@@ -1,8 +1,4 @@
---function OnGetClothes(player)
---	AddPlayerChat(player, "salut toi je debu")
---	team = CallRemoteEvent("GetPlayerWestlandTeam", player)
---	AddPlayerChat(player, "team: "..team)
---	CallRemoteEvent("OnChangeclothes", team)
---	SetPlayerWeapon(player, 3, 30, true, 1, true)
---end
---AddEvent("OnGetClothes", OnGetClothes)
+function OnGetWeapon(player)
+	SetPlayerWeapon(player, 3, 30, true, 1, true)
+end
+AddRemoteEvent("OnGetWeapon", OnGetWeapon)

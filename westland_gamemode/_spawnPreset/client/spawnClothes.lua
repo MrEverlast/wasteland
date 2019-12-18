@@ -1,9 +1,8 @@
 function OnGetClothes()
-	AddPlayerChat("salut toi je debu")
-	local team = CallRemoteEvent("GetPlayerWestlandTeam", GetPlayerId())
-	AddPlayerChat("team: "..tostring(team))
-	CallEvent("OnChangeclothes", "teamRed")
---	SetPlayerWeapon(player, 3, 30, true, 1, true)
+    local team = GetPlayerPropertyValue(GetPlayerId(), "westlandTeam")
+	AddPlayerChat("You choose: "..tostring(team))
+    CallEvent("OnChangeclothes", team)
+    CallRemoteEvent("OnGetWeapon", GetPlayerId())
 end
 AddEvent("OnGetClothes", OnGetClothes)
 

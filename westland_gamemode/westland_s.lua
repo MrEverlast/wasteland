@@ -26,7 +26,7 @@ end)
 
 function OnPlayerJoin(player)
     -- Set the player spawn
-    SetPlayerSpawnLocation(player, -105776.000000, 195838.000000, 1659.000000, 90.0)
+    SetPlayerSpawnLocation(player, -105776.00, 195838.00, 1700.00, 90.0)
 end
 AddEvent("OnPlayerJoin", OnPlayerJoin)
 
@@ -50,27 +50,12 @@ function checkForNewAccount(player, steamId)
     end
 end
 
-function cmd_test(player)
-	AddPlayerChat(player, "Team selected : " .. GetPlayerWestlandTeam(player))
-end
-AddCommand("t", cmd_test)
-
-function cmd_team(player, team)
-    SetPlayerWestlandTeam(player, team)
-end
-AddCommand("team", cmd_team)
-
--- Set/Get Westland team --
+-- Set Westland team --
 function SetPlayerWestlandTeam(player, team)
     SetPlayerPropertyValue(player, "westlandTeam", team)
 end
 AddRemoteEvent("SetPlayerWestlandTeam", SetPlayerWestlandTeam)
 
-function GetPlayerWestlandTeam(player)
-    return GetPlayerPropertyValue(player, "westlandTeam")
-end
-AddRemoteEvent("GetPlayerWestlandTeam", GetPlayerWestlandTeam)
-
--- End Set/Get Westland team --
+-- End Set Westland team --
 
 -- Debug --

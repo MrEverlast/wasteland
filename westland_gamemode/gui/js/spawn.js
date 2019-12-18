@@ -1,5 +1,4 @@
-$(".senpai").on('click', () => {
+$(".SpawnButton").on('click', () => {
     CallEvent("OnGetClothes")
     CallEvent("DestroyWestlandUI")
-    //alert(e.target.id);
 })

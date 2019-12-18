@@ -29,3 +29,8 @@ function cmd_skin(player, select)
 	CallRemoteEvent(player, "ChangeSkin", select)
 end
 AddCommand("skin", cmd_skin)
+
+function cmd_test(player)
+	AddPlayerChat(player, "Team selected : " .. GetPlayerPropertyValue(player, "westlandTeam"))
+end
+AddCommand("t", cmd_test)
