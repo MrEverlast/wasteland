@@ -1,0 +1,18 @@
+{
+	"author": "Everlast",
+	"version": "1.0",
+	"server_scripts": [
+		"server/pc.lua"
+    ],
+    "client_scripts": [
+		"client/pc.lua"
+	],
+	"files": [
+		"client/gui/pc.html",
+		"client/gui/pc.css",
+		"client/gui/pc.js",
+		"client/gui/jquery.js",
+		"client/gui/bootstrap.bundle.min.js",
+		"client/gui/bootstrap.min.css"
+	]
+}

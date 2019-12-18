@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Destroyed_Areo';
+    src: url('http://asset/westland_gamemode/gui/font/Destroyed_Aero.ttf') format('truetype');
+}
+*{
+    -webkit-user-select: none;
+}
+html, body {
+    background: rgba(0, 0, 0, 0.24) !important;
+    height: 100% !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+
+#title {
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+h1 {
+    font-family: 'Destroyed_Areo';
+    margin: 0;
+}
+.changeHeigth {
+    height: 100% !important;
+}
+
+.parent {
+    overflow: hidden !important;
+    padding: 0;
+}
+
+.child {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: cubic-bezier(0.01, 0.96, 1, 1) .15s;
+    color: white;
+    font-family: 'Destroyed_Areo';
+    font-size: 3em;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+.child::before {
+    content: "";
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s;
+}
+.blue {
+    background-image: url("http://asset/westland_gamemode/gui/img/Blue.jpg");
+}
+.red {
+    background-image: url("http://asset/westland_gamemode/gui/img/Red.jpg");
+}
+.green {
+    background-image: url("http://asset/westland_gamemode/gui/img/Green.jpg");
+}
+
+/* .blue::before {
+    background-color: rgba(11, 91, 138, 0.10);
+}
+.red::before {
+    background-color: rgba(202, 62, 62, 0.10);
+}
+.green::before {
+    background-color: rgba(11, 138, 22, 0.10);
+} */
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+    display: block;
+    opacity: 1;
+}
+.child span {
+    top: 65%;
+    display: block;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.parent:hover span,
+.parent:focus span {
+  display: block;
+}

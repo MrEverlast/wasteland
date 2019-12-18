@@ -1,0 +1,23 @@
+{
+	"author": "Everlast",
+	"version": "1.0",
+	"server_scripts": [
+		"westland_s.lua"
+	],
+	"client_scripts": [
+		"westland_c.lua"
+	],
+	"files": [
+		"gui/team/team.html",
+		"gui/font/Destroyed_Aero.ttf",
+		"gui/css/bootstrap.min.css",
+		"gui/css/team.css",
+		"gui/js/jquery.js",
+		"gui/js/bootstrap.bundle.min.js",
+		"gui/js/callEvent.js",
+		"gui/js/team.js",
+		"gui/img/Blue.jpg",
+		"gui/img/Red.jpg",
+		"gui/img/Green.jpg"
+	]
+}
