@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Destroyed_Areo';
-    src: url('http://asset/westland_gamemode/gui/font/Destroyed_Aero.ttf') format('truetype');
+    src: url('http://asset/wasteland_gamemode/gui/font/Destroyed_Aero.ttf') format('truetype');
 }
 *{
     -webkit-user-select: none;
@@ -62,13 +62,13 @@ option {
     transition: all .5s;
 }
 .blue {
-    background-image: url("http://asset/westland_gamemode/gui/img/Blue.jpg");
+    background-image: url("http://asset/wasteland_gamemode/gui/img/Blue.jpg");
 }
 .red {
-    background-image: url("http://asset/westland_gamemode/gui/img/Red.jpg");
+    background-image: url("http://asset/wasteland_gamemode/gui/img/Red.jpg");
 }
 .green {
-    background-image: url("http://asset/westland_gamemode/gui/img/Green.jpg");
+    background-image: url("http://asset/wasteland_gamemode/gui/img/Green.jpg");
 }
 
 .containCard {

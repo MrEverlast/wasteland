@@ -1,5 +1,5 @@
 AddEvent("OnPackageStart", function()
-    CreateWestlandUI("http://asset/westland_gamemode/gui/html/team.html")
+    CreateWastelandUI("http://asset/wasteland_gamemode/gui/html/team.html")
 end)
 
 function OnResolutionChange(width, height)
@@ -8,12 +8,12 @@ function OnResolutionChange(width, height)
 end
 AddEvent("OnResolutionChange", OnResolutionChange)
 
-function SetWestlandTeam(team)
-    CallRemoteEvent("SetPlayerWestlandTeam", tostring(team))
+function SetWastelandTeam(team)
+    CallRemoteEvent("SetPlayerWastelandTeam", tostring(team))
 end
-AddEvent("SetWestlandTeam", SetWestlandTeam)
+AddEvent("SetWastelandTeam", SetWastelandTeam)
 
-function CreateWestlandUI(url) 
+function CreateWastelandUI(url) 
     if (teamUI) then
         DestroyWebUI(teamUI)
     end
@@ -25,12 +25,12 @@ function CreateWestlandUI(url)
     ShowMouseCursor(true)
     LoadWebFile(teamUI, url)
 end
-AddRemoteEvent("CreateWestlandUI", CreateWestlandUI)
+AddRemoteEvent("CreateWastelandUI", CreateWastelandUI)
 
-function DestroyWestlandUI()
+function DestroyWastelandUI()
     SetInputMode(INPUT_GAME)
     ShowMouseCursor(false)
     SetWebVisibility(teamUI, WEB_HIDDEN)
     DestroyWebUI(teamUI)
 end
-AddEvent("DestroyWestlandUI", DestroyWestlandUI)
+AddEvent("DestroyWastelandUI", DestroyWastelandUI)

@@ -4,7 +4,7 @@ AddEvent("OnPackageStart", function()
 	local SQL_PORT = 3306
 	local SQL_USER = "root"
 	local SQL_PASS = ""
-	local SQL_DATA = "onset_westland"
+	local SQL_DATA = "onset_wasteland"
 	local SQL_CHAR = "utf8mb4"
 	local SQL_LOGL = "debug"
 
@@ -45,18 +45,18 @@ function checkForNewAccount(player, steamId)
         mariadb_query(sql, query)
     else
         AddPlayerChat(player, "Welcome back " .. GetPlayerName(player) .. "!")
-        SetPlayerPropertyValue(player, "westlandTeam", "none")
+        SetPlayerPropertyValue(player, "wastelandTeam", "none")
         AddPlayerChat(player, GetPlayerPropertyValue(player, "testValue"))
     end
 end
 
--- Set Westland team --
-function SetPlayerWestlandTeam(player, team)
-    SetPlayerPropertyValue(player, "westlandTeam", team)
-    CallRemoteEvent(player, "CreateWestlandUI", "http://asset/westland_gamemode/gui/html/spawn.html")
+-- Set wasteland team --
+function SetPlayerWastelandTeam(player, team)
+    SetPlayerPropertyValue(player, "wastelandTeam", team)
+    CallRemoteEvent(player, "CreateWastelandUI", "http://asset/wasteland_gamemode/gui/html/spawn.html")
 end
-AddRemoteEvent("SetPlayerWestlandTeam", SetPlayerWestlandTeam)
+AddRemoteEvent("SetPlayerWastelandTeam", SetPlayerWastelandTeam)
 
--- End Set Westland team --
+-- End Set Wasteland team --
 
 -- Debug --
