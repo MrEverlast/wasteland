@@ -53,6 +53,7 @@ end
 -- Set Westland team --
 function SetPlayerWestlandTeam(player, team)
     SetPlayerPropertyValue(player, "westlandTeam", team)
+    CallRemoteEvent(player, "CreateWestlandUI", "http://asset/westland_gamemode/gui/html/spawn.html")
 end
 AddRemoteEvent("SetPlayerWestlandTeam", SetPlayerWestlandTeam)
 

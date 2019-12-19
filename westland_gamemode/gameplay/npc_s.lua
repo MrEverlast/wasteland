@@ -12,12 +12,19 @@ AddEvent("OnNPCDeath", function(npc, player)
         local teamDead = GetNPCPropertyValue(npc, "westlandTeam") -- player how dies
         local colorKiller, colorDead = GetKillFeedColors(teamKiller, teamDead)
 
-        AddPlayerChatAll('<span color="'..colorKiller..'">oyoyui</> just killed <span color="'..colorDead..'">pipipipipipipi</>')
+        AddPlayerChatAll('<span color="'..colorKiller..'">'..GetPlayerName(player)..'</> just killed <span color="'..colorDead..'">'.. npc ..'</>')
         if(tostring(teamDead) == tostring(teamKiller)) then
             SetPlayerHealth(player, 0)
         end
     end
 end)
+
+function OnPlayerDeath(player, instigator)
+    Delay(4000, function()
+		CallRemoteEvent(player, "CreateWestlandUI", "http://asset/westland_gamemode/gui/html/spawn.html")
+	end)
+end
+AddEvent("OnPlayerDeath", OnPlayerDeath)
 
 function GetKillFeedColors(teamKiller, teamDead)
     local colorKiller = "#FFFFFF"
@@ -33,7 +40,3 @@ function GetKillFeedColors(teamKiller, teamDead)
 
     return colorKiller, colorDead
 end
-
-AddCommand("npc", function(player)
-    AddPlayerChat(player, tostring(GetNPCPropertyValue(GetAllNPC()[1], "westlandTeam")))
-end)
