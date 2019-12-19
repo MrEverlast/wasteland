@@ -12,7 +12,7 @@ AddEvent("OnNPCDeath", function(npc, player)
         local teamDead = GetNPCPropertyValue(npc, "westlandTeam") -- player how dies
         local colorKiller, colorDead = GetKillFeedColors(teamKiller, teamDead)
 
-        AddPlayerChatAll('<span color="'..colorKiller..'">oyoyui</> <span color="'..colorDead..'">pipipipipipipi</>')
+        AddPlayerChatAll('<span color="'..colorKiller..'">oyoyui</> just killed <span color="'..colorDead..'">pipipipipipipi</>')
         if(tostring(teamDead) == tostring(teamKiller)) then
             SetPlayerHealth(player, 0)
         end
