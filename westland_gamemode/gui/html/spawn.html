@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="http://asset/westland_gamemode/gui/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://asset/westland_gamemode/gui/css/team.css">
 
     <script src="http://asset/westland_gamemode/gui/js/callEvent.js"></script>
     <script src="http://asset/westland_gamemode/gui/js/jquery.js"></script>
@@ -13,17 +14,56 @@
 <body>
     <div id="title" class="container">
         <h1 class="display-3 text-center">Select your spawn</h1>
-    </div>
-    <div class="container">
-        <select id="spawnZone" class="custom-select" multiple>
+        <div class="container">
+            <div class="row containCard">
+                <div class="card" style="width: 18rem;">
+                    <img src="http://asset/westland_gamemode/gui/img/Blue.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Big city</h5>
+                      <button type="button" class="SpawnButtonBig btn btn-primary">Spawn</button> 
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="http://asset/westland_gamemode/gui/img/Blue.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Desert city</h5>
+                      <button type="button" class="SpawnButtonDesert btn btn-primary">Spawn</button> 
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="http://asset/westland_gamemode/gui/img/Blue.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Village</h5>
+                      <button type="button" class="SpawnButtonVillage btn btn-primary">Spawn</button> 
+                    </div>
+                </div>
+            </div>
+            <div  class="row containCard">
+                <div class="card" style="width: 18rem;">
+                    <img src="http://asset/westland_gamemode/gui/img/Blue.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Western town</h5>
+                      <button type="button" class="SpawnButtonWestern btn btn-primary">Spawn</button> 
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="http://asset/westland_gamemode/gui/img/Blue.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Old town</h5>
+                      <button type="button" class="SpawnButtonOld btn btn-primary block-center">Spawn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <select id="spawnZone" class="custom-select" multiple size="1">
             <option selected value="Dev">For developer</option>
-            <option value="BigCity">Big city</option>
+            <!--<option value="BigCity">Big city</option>
             <option value="DesertCity">Desert city</option>
             <option value="Village">Village</option>
             <option value="WesternTown">Western town</option>
-            <option value="OldTown">Old town</option>
+            <option value="OldTown">Old town</option>-->
         </select>
-        <button type="button" class="SpawnButton btn btn-primary">Spawn</button> 
+        <button type="button" class="SpawnButton btn btn-primary">Spawn</button>
     </div>
     <script src="http://asset/westland_gamemode/gui/js/spawn.js"></script>
 </body>

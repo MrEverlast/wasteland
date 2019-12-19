@@ -20,6 +20,13 @@ h1 {
     font-family: 'Destroyed_Areo';
     margin: 0;
 }
+
+option {
+    font-family: 'Destroyed_Areo';
+    margin: 0;
+    font-size: '24px' !important;
+}
+
 .changeHeigth {
     height: 100% !important;
 }
@@ -62,6 +69,17 @@ h1 {
 }
 .green {
     background-image: url("http://asset/westland_gamemode/gui/img/Green.jpg");
+}
+
+.containCard {
+    margin-top: 5%;
+}
+
+.card {
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    color: rgb(39, 39, 39);
 }
 
 /* .blue::before {
