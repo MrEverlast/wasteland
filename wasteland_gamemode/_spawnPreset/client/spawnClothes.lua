@@ -1,6 +1,5 @@
 function OnGetClothes(zone)
     local team = GetPlayerPropertyValue(GetPlayerId(), "wastelandTeam")
-    AddPlayerChat('You choose the team: <span color="#eba134">'..tostring(team)..'</>')
     AddPlayerChat('Vous choose to spawn at: <span color="#eba134">'..tostring(zone)..'</>')
     CallEvent("OnChangeclothes", team)
     CallRemoteEvent("OnSpawnWeapon", GetPlayerId())

@@ -15,11 +15,13 @@ AddEvent("OnNPCDeath", function(npc, player)
         AddPlayerChatAll('<span color="'..colorKiller..'">'..GetPlayerName(player)..'</> just killed <span color="'..colorDead..'">'.. npc ..'</>')
         if(tostring(teamDead) == tostring(teamKiller)) then
             SetPlayerHealth(player, 0)
+            AddPlayerChat(player, 'Team killing is not allowed!')
         end
     end
 end)
 
 function OnPlayerDeath(player, instigator)
+    AddPlayerChat(player, 'If the respawn UI don\'t show up, please press "TAB" to fix it')
     Delay(4000, function()
 		CallRemoteEvent(player, "CreateWastelandUI", "http://asset/wasteland_gamemode/gui/html/spawn.html")
 	end)
